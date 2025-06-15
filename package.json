@@ -1,0 +1,12 @@
+{
+  "name": "loopstudios",
+  "version": "1.0.0",
+  "description": "![Design preview for the Loopstudios landing page coding challenge](preview.jpg)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
