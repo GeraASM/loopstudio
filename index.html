@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/style.css"/>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
+    <div id="background"></div>
+    <header class="loopstudios">
+        <div class="loopstudios-content">
+            <div class="loopstudios-content__header">
+
+                <figure class="loopstudios__logo">
+                    <img src="./images/logo.svg" alt="logo" class="loopstudios__logo-img">
+                </figure>
+                <nav class="loopstudios__nav">
+                    <ul>
+                        <li><a href="#" class="link">About</a></li>
+                        <li><a href="#" class="link">Careers</a></li>
+                        <li><a href="#" class="link">Events</a></li>
+                        <li><a href="#" class="link">Products</a></li>
+                        <li><a href="#" class="link">Support</a></li>
+                    </ul>
+                </nav>
+                <figure class="loopstudios__menu">
+                    <img class="loopstudios__menu-logo" src="./images/icon-hamburger.svg" alt="menu">
+                </figure>
+            </div>
+            <h1 class="loopstudios__title">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="interactive">
+            <div class="interactive-content">
+
+                <figure class="interactive__figure">
+                    <img src="./images/mobile/image-interactive.jpg" alt="Interactive" class="interactive__img">
+                </figure>
+                <article class="interactive__texts">
+                    <h2 class="interactive__title">THE LEADER IN INTERACTIVE VR</h2>
+                    <p class="interactive__text">
+                        Founded in 2011, Loopstudios has been producing world-class virtual reality 
+      projects for some of the best companies around the globe. Our award-winning 
+      creations have transformed businesses through digital experiences that bind 
+      to their brand.
+                    </p>
+            </div>
+            </article>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+  <!-- About
   Careers
   Events
   Products
@@ -25,10 +67,7 @@
 
   The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+  
 
   Our creations
 
@@ -49,11 +88,8 @@
   Products
   Support
 
-  © 2021 Loopstudios. All rights reserved.
+  © 2021 Loopstudios. All rights reserved. -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
