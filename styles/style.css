@@ -121,11 +121,65 @@ img {
   width: 24px;
   height: 16px;
   object-fit: contain;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   .loopstudios__menu {
     display: none;
   }
+}
+.loopstudios__menu-show {
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  z-index: 2;
+  padding: 32px;
+  transition: transform 0.4s ease-out;
+}
+@media screen and (min-width: 768px) {
+  .loopstudios__menu-show {
+    padding: 80px;
+  }
+}
+.loopstudios__menu-show .close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .loopstudios__menu-show .close {
+    width: 25px;
+    height: 25px;
+    top: 80px;
+    right: 80px;
+  }
+}
+.loopstudios__menu-show .close__img {
+  width: 100%;
+  object-fit: contain;
+}
+.loopstudios__menu-show .loopstudios__logo {
+  margin-bottom: 80px;
+}
+.loopstudios__menu-show .loopstudios__nav {
+  display: block;
+}
+.loopstudios__menu-show .loopstudios__nav ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.loopstudios__menu-show .link {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 .loopstudios__title {
   font-family: "Josefin Sans", sans-serif;

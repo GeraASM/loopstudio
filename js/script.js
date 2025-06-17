@@ -51,3 +51,17 @@ const creationsMobile = {
     7: './images/mobile/image-fisheye.jpg'
 }
 
+const loopstudiosMenu = document.querySelector('.loopstudios__menu');
+const menuShow = document.getElementById('menuShow');
+const close = document.getElementById('close');
+
+function activateMenu() {
+    menuShow.style.transform = 'translateX(0)';
+}
+
+function removeMenu() {
+    menuShow.style.transform = 'translateX(-100%)';
+}
+
+loopstudiosMenu.addEventListener('click', activateMenu);
+close.addEventListener('click', removeMenu);
